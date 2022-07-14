@@ -11,16 +11,20 @@
   <h2>実験Bサンプルコード</h2>
   <hr>
   
+   <div class = "box">  
    <h3>センタリングCSS</h3>
         <h4>.body{</h4>
         <h4 class= "indent">width: 1024px;</h4>
          <h4 class= "indent">margin: auto;</h4> 
           <h4 class= "indent"></h4> 
         <h4>}</h4>
-        <br>
-  
+       </div> 
+  <br>
+
+     
+  <div class = "box">  
   <h3>タイマー実装JS</h3>
-    <div class = "text_box">
+   
        <h4>const min = document.getElementById("min");</h4>
        <h4>const sec = document.getElementById("sec");</h4>
        <h4> const limit = new Date(+new Date() + (5 * 60 * 1000))</h4>
@@ -36,9 +40,11 @@
        <h4>}</h4>
        <h4> countdown();</h4>
        <h4>setInterval(countdown,1000);</h4>
-       <br>
-     </div>
+       </div> 
+          <br>
     
+    
+           <div class = "box">  
   <h3>タイマーCSS</h3>
           <h4>.timer{</h4>
            <h4 class= "indent">float: right;</h4> 
@@ -51,10 +57,12 @@
           <h4 class= "indent"> text-align:center;</h4> 
            <h4 class= "indent">padding:auto;</h4> 
           <h4>}</h4>      
-            <br>            
+              </div>
+          <br>  
+           
   
  
-
+ <div class = "box">  
   <h3>各問題のボックス(影付き)CSS</h3>
           <h4>.q_box{</h4>
            <h4 class= "indent">padding: 0.5em 1em;</h4> 
@@ -64,8 +72,11 @@
            <h4 class= "indent">border-top:solid 6px rgb(147, 206, 246);</h4> 
            <h4 class= "indent"> box-shadow: 0 2px 3px rgba(0,0,0,32);</h4> 
           <h4>}</h4>      
-            <br>
-          
+           </div>  
+          <br>
+
+      
+    <div class = "box">  
  <h3>プルダウンメニューCSS</h3>
           <h4>.select,option{</h4>
            <h4 class= "indent"> border: rgb(0, 0, 0) 1px inset;</h4> 
@@ -76,14 +87,20 @@
            <h4 class= "indent"> padding: auto;</h4>
           <h4 class= "indent"> margin: auto;</h4> 
           <h4>}</h4>      
-            <br>         
-          
+        </div>    
+          <br>  
+       
+       
+       <div class = "box">  
   <h3>5分後模範解答にジャンプJS</h3>
             <h4>setTimeout(function(){</h4>
       <h4 class= "indent">window.location.href = 'https://code.cx.tl.fukuoka-u.ac.jp/ieb/cgi/tl201229/t5/kaitou_origin.html';</h4>
             <h4>},5*60*1000);//5分(ミリ秒)</h4>
+          </div>
           <br>
+         
        
+          <div class = "box">  
  <h3>一定の回答をしたときに模範解答を表示する機能C++</h3>
           <h4>CGI_output_dataを改良</h4>
            <h4>if (query_len <= 80) {</h4>
@@ -93,13 +110,16 @@
             <h4> } else {</h4> 
            <h4 class= "indent"> printf("&lt;a class =\"kaitou\" href=\"kaitou_origin.html\" "</h4> 
            <h4 class= "indent"> "target=\"_blank\"&gt;模範解答&lt;/a&gt;");</h4> 
-           <h4> }</h4
+           <h4> }</h4>
+              </div>
    <br>
              
+              <div class = "box">  
     <h3>非表示</h3>
           <h4>.hide{</h4>
            <h4 class= "indent"> display:none;</h4> 
-          <h4>}</h4>      
+          <h4>}</h4> 
+                 </div>
             <br>   
       
     

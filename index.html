@@ -15,26 +15,27 @@
   <h3>タイマー実装</h3>
 
     <li>JS</li> 
-  <h4>//const hour = document.getElementById("hour");</h4>
+  
  <h4>const min = document.getElementById("min");</h4>
  <h4>const sec = document.getElementById("sec");</h4>
  <h4> const limit = new Date(+new Date() + (5 * 60 * 1000))</h4>
- 
+ <br>
  <h4> function countdown() {</h4>
-  <h4> const now = new Date(); // 現在時刻を取得</h4>
- 
-  <h4> const diff = limit.getTime() - now.getTime(); // 時間の差を取得（ミリ秒）</h4>
-
- <h4>  // ミリ秒から単位を修正</h4>
- <h4>  const calcMin = Math.floor(diff / 1000 / 60) % 60;</h4>
- <h4>  const calcSec = Math.floor(diff / 1000) % 60;</h4>
-
-  <h4> // 取得した時間を表示（2桁表示）</h4>
-  <h4> min.innerHTML = calcMin < 10 ? '0' + calcMin : calcMin;</h4>
-  <h4> sec.innerHTML = calcSec < 10 ? '0' + calcSec : calcSec;</h4>
+ <h4 class= "1rem"> const now = new Date(); // 現在時刻を取得</h4>
+ <h4 class= "1rem"> const diff = limit.getTime() - now.getTime(); // 時間の差を取得（ミリ秒）</h4>
+ <br>
+ <h4 class= "1rem">  // ミリ秒から単位を修正</h4>
+ <h4 class= "1rem">  const calcMin = Math.floor(diff / 1000 / 60) % 60;</h4>
+ <h4 class= "1rem">  const calcSec = Math.floor(diff / 1000) % 60;</h4>
+ <br>
+  <h4 class= "1rem"> // 取得した時間を表示（2桁表示）</h4>
+  <h4 class= "1rem"> min.innerHTML = calcMin < 10 ? '0' + calcMin : calcMin;</h4>
+  <h4 class= "1rem"> sec.innerHTML = calcSec < 10 ? '0' + calcSec : calcSec;</h4>
  <h4>}</h4>
  <h4> countdown();</h4>
  <h4>setInterval(countdown,1000);</h4>
+ <br>
+    
     
   <h3>センタリング</h3>
 

@@ -4,35 +4,57 @@
 <head>
   <link href="stylesheet.css" rel="stylesheet" type="text/css" media="all">
   <meta charset="utf-8">
-  <title> 小テスト 模範解答</title> 
+  <title>サンプルコード</title> 
 </head>
 
 <body>
-  <h1>情報工学実験Ｂ</h1>
+  <h1>サンプルコード</h1>
   <hr>
-  <h2>第一回小テスト模範解答</h2>
+  <h2>実験Bサンプルコード</h2>
 
-  <h3> [問1] </h3>
+  <h3>タイマー実装</h3>
 
-    <li>はい</li>  
+    <li>JS</li> 
+  //const hour = document.getElementById("hour");
+const min = document.getElementById("min");
+const sec = document.getElementById("sec");
+ const limit = new Date(+new Date() + (5 * 60 * 1000))
+ 
+function countdown() {
+  const now = new Date(); // 現在時刻を取得
+ 
+  const diff = limit.getTime() - now.getTime(); // 時間の差を取得（ミリ秒）
 
-  <h3> [問2] </h3>
+  // ミリ秒から単位を修正
+  //const calcHour = Math.floor(diff / 1000 / 60 / 60);
+  const calcMin = Math.floor(diff / 1000 / 60) % 60;
+  const calcSec = Math.floor(diff / 1000) % 60;
+
+  // 取得した時間を表示（2桁表示）
+  //hour.innerHTML = calcHour < 10 ? '0' + calcHour : calcHour;
+  min.innerHTML = calcMin < 10 ? '0' + calcMin : calcMin;
+  sec.innerHTML = calcSec < 10 ? '0' + calcSec : calcSec;
+}
+countdown();
+setInterval(countdown,1000);
+
+  <h3>センタリング</h3>
 
     <li>早良区（さわらく）</li> 
 
-  <h3> [問3] </h3>
+  <h3>各問題のボックス</h3>
 
     <li>I'm an instructor in a robot classroom</li>
 
-  <h3> [問4] </h3>
+  <h3>ボタンの立体化</h3>
 
     <li> 2.World Robot Olympiad</li>
 
-  <h3> [問5] </h3>
+  <h3>模範解答にジャンプ</h3>
 
     <li>1.C++ 2.HTML 3.CSS 4.Python 5.Java Script 全て使用しています。 </li>
 
-  <h3> [問6] </h3>
+  <h3>一定の回答をしたときに模範解答を表示する機能</h3>
 
     <li> 2.茶山->3.金山->1.七隈</li>
 

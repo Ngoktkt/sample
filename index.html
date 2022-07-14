@@ -19,15 +19,12 @@
        <h4>const min = document.getElementById("min");</h4>
        <h4>const sec = document.getElementById("sec");</h4>
        <h4> const limit = new Date(+new Date() + (5 * 60 * 1000))</h4>
-       <br>
        <h4> function countdown() {</h4>
        <h4 class= "indent"> const now = new Date(); // 現在時刻を取得</h4>
        <h4 class= "indent"> const diff = limit.getTime() - now.getTime(); // 時間の差を取得（ミリ秒）</h4>
-       <br>
        <h4 class= "indent">  // ミリ秒から単位を修正</h4>
        <h4 class= "indent">  const calcMin = Math.floor(diff / 1000 / 60) % 60;</h4>
        <h4 class= "indent">  const calcSec = Math.floor(diff / 1000) % 60;</h4>
-       <br>
         <h4 class= "indent"> // 取得した時間を表示（2桁表示）</h4>
         <h4 class= "indent"> min.innerHTML = calcMin < 10 ? '0' + calcMin : calcMin;</h4>
         <h4 class= "indent"> sec.innerHTML = calcSec < 10 ? '0' + calcSec : calcSec;</h4>
